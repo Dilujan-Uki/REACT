@@ -1,0 +1,14 @@
+h1{
+    color: red;
+     margin-left: 10px;
+      transition: ease 4s;
+}
+h1:hover{
+    transform: scale(0.8);
+    color: fuchsia;
+}
+
+p{
+    color: blue;
+    font-size: 25px
+}
