@@ -1,3 +1,4 @@
+
 export default function New2(){
     return(
         <>
@@ -7,4 +8,4 @@ export default function New2(){
         <p>My Favourite food is Noodels</p>
         </>
     )
-}
+};
