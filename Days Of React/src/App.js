@@ -15,9 +15,9 @@ function App() {
     {/* <Task2 data={flower}></Task2> */}
     {/* <Props3 data={flower}></Props3> */}
     {/* <Props3 name="Sunflower" color="Yellow"></Props3>  */}
-    {/* <Hook></Hook> */}
+    <Hook></Hook>
     {/* <Hook2></Hook2> */}
-    <Emoji></Emoji>
+    {/* <Emoji></Emoji> */}
    </>
   );
 }

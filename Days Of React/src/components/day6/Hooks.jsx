@@ -2,7 +2,7 @@ import { useState } from "react";
 
 export default function State(){
     let clicked =0;
-    let [count,setCount]=useState(0);
+    let [count,setCount]=useState(clicked);
     let handelClick=()=>{
         console.log(count);
         setCount(count+10);
