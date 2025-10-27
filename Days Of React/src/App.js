@@ -6,7 +6,8 @@ import Hook2 from './components/day6/Hook2'
 import Emoji from './components/day6/Emoji'
 import Apple from './components/day7/Apple'
 import Sets from './components/day7/Sets'
-
+import Form from './components/day8/Form'
+import Form2  from './components/day8/Task';
 function App() {
 
    
@@ -21,7 +22,9 @@ function App() {
     {/* <Hook2></Hook2> */}
     {/* <Emoji></Emoji> */}
     {/* <Apple></Apple> */}
-    <Sets></Sets>
+    {/* <Sets></Sets> */}
+    {/* <Form></Form> */}
+    <Form2></Form2>
    </>
   );
 }
