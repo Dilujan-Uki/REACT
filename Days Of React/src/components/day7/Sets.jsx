@@ -58,9 +58,9 @@ export default function State(){
     return(
         <>
         <button onClick={handelClick1}><img style={img} src={Sun} alt="Sun" /></button>
-        <button onClick={handelClick2}><img style={img} src={Moon} alt="Sun" /></button>
-        <button onClick={handelClick3}><img style={img} src={Star} alt="Sun" /></button>
-        <button onClick={handelClick4}><img style={img} src={Heart} alt="Sun" /></button>
+        <button onClick={handelClick2}><img style={img} src={Moon} alt="Moon" /></button>
+        <button onClick={handelClick3}><img style={img} src={Star} alt="Star" /></button>
+        <button onClick={handelClick4}><img style={img} src={Heart} alt="Heart" /></button>
         </>
     )
 }
