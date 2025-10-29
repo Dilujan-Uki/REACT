@@ -1,5 +1,5 @@
 import { useState } from "react"
-export default function Form2(){
+export default function Task(){
 const [Name,setName]=useState('');
 const [Password,setPassword]=useState('');
 const [Gender,setGender]=useState(''); 

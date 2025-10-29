@@ -7,7 +7,9 @@ import Emoji from './components/day6/Emoji'
 import Apple from './components/day7/Apple'
 import Sets from './components/day7/Sets'
 import Form from './components/day8/Form'
-import Form2  from './components/day8/Task';
+import Task1  from './components/day8/Task';
+import Form1 from './components/day9/Form1';
+
 function App() {
 
    
@@ -24,7 +26,9 @@ function App() {
     {/* <Apple></Apple> */}
     {/* <Sets></Sets> */}
     {/* <Form></Form> */}
-    <Form2></Form2>
+    {/* <Form2></Form2> */}
+    {/* <Task1></Task1> */}
+    <Form1></Form1>
    </>
   );
 }
