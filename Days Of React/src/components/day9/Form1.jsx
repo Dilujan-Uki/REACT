@@ -22,35 +22,44 @@ let handelClick=(event)=>{
 }
     return(
         <>
-        <form>
-            <label>FirstName:</label>
-            <input  type="text" value={FirstName} onChange={(event)=>setFirstname(event.target.value)}/><br /><br />
-            <label>LastName:</label>
-            <input type="text" value={LastName} onChange={(event)=>setLastname(event.target.value)}/><br /><br />
-            <label>Email:</label>
-            <input type="text" value={Email} onChange={(event)=>setEmail(event.target.value)}/><br /><br />
-            <label>Male:</label>
-            <input type="radio" name="Gender" value={"Male"} onChange={(event)=>setGender(event.target.value)}/><br /><br />
-            <label>Female:</label>
-            <input type="radio" name="Gender" value={"Female"} onChange={(event)=>setGender(event.target.value)} /><br /><br />
-            <label>Address:</label>
-            <input type="text" value={Address} onChange={(event)=>setAddress(event.target.value)}/><br /><br />
-            <label>Comment:</label>
-             <textarea value={Comment} onChange={(event)=>setComment(event.target.value)}></textarea><br /><br />
-             <button type="submit" onClick={event=>handelClick(event)}>Submit</button>
+        <div   style={{width:'900px', marginLeft:'100mm', background:'#cce3de',marginTop:'20mm' }}>
+        <form style={{width:'800px', marginLeft:'10mm'}}>
+            <label className="form-label m-2">FirstName:</label>
+            <input className="form-control" type="text" value={FirstName} onChange={(event)=>setFirstname(event.target.value)}/><br /><br />
+            <label className="form-label m-2">LastName:</label>
+            <input className="form-control" type="text" value={LastName} onChange={(event)=>setLastname(event.target.value)}/><br /><br />
+            <label className="form-label m-2">Email:</label>
+            <input className="form-control" type="text" id="email" value={Email} onChange={(event)=>setEmail(event.target.value)}/><br /><br />
+            <label>Gender:</label><br /> <br />
+            <div class="form-check form-check-inline">
+              <input className="form-check-input" type="radio" name="Gender" value={"Female"} onChange={(event)=>setGender(event.target.value)} />
+            <label>Female</label>
+            </div>
+             <div class="form-check form-check-inline">
+             <input className="form-check-input" type="radio" name="Gender" value={"Male"} onChange={(event)=>setGender(event.target.value)}/>
+             <label>Male</label>
+             </div><br /><br />
+           
+            <label htmlFor="inlineFormInput"  className="form-label m-2">Address:</label>
+            <input className="form-control" type="text" value={Address} onChange={(event)=>setAddress(event.target.value)}/><br /><br />
+            <label className="form-label m-2">Comment:</label>
+             <textarea className="form-control" value={Comment} onChange={(event)=>setComment(event.target.value)}></textarea><br /><br />
+             <button className="btn btn-success btn-lg" type="submit" onClick={event=>handelClick(event)}>Submit</button>
         </form>
+        </div>
+        
 
         {
             submitted &&(
                 <>
-                <table border={1}>
+                <table border={1} style={{marginLeft:'100mm',marginTop:'10mm'}} className="table table-bordered">
                     <tr>
-                        <th>FirstName</th>
-                        <th>LastName</th>
-                        <th>Email</th>
-                        <th>Gender</th>
-                        <th>Address</th>
-                        <th>Comment</th>
+                        <th className="bg-success">FirstName</th>
+                        <th className="bg-success">LastName</th>
+                        <th className="bg-success">Email</th>
+                        <th className="bg-success">Gender</th>
+                        <th className="bg-success">Address</th>
+                        <th className="bg-success">Comment</th>
                     </tr>
                     <tr>
                         <td>{submitted.firstName}</td>
