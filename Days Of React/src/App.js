@@ -9,7 +9,7 @@ import Sets from './components/day7/Sets'
 import Form from './components/day8/Form'
 import Task1  from './components/day8/Task';
 import Form1 from './components/day9/Form1';
-
+import BMI from './components/day10/BMIcalculator'
 function App() {
 
    
@@ -28,7 +28,8 @@ function App() {
     {/* <Form></Form> */}
     {/* <Form2></Form2> */}
     {/* <Task1></Task1> */}
-    <Form1></Form1>
+    {/* <Form1></Form1> */}
+    <BMI></BMI>
    </>
   );
 }
