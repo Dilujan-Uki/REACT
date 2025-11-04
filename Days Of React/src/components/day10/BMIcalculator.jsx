@@ -14,6 +14,10 @@ export default function BMI(){
     }
     let handleSubmit=(e)=>{
         e.preventDefault();
+
+        if(!formData.cm || !formData.kg){
+            alert("Fill the label")
+        }
         let bmi=formData.kg/(Math.pow(formData.cm,2)/100/100);
         setBmiData(bmi.toFixed(1));
         if(bmi<18.5){
