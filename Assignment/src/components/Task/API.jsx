@@ -32,7 +32,7 @@ export default function API() {
     if (error) return <p className="text-red-700">Error: {error}</p>;
 
     return (
-        <div style={{ padding: "20px" }}>
+        <div className="p-20">
             <h2>Fetched Data</h2>
 
             <div className="grid gap-6">
